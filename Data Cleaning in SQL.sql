@@ -386,6 +386,3 @@ SET    calculated_host_listings_count = LEFT(reviews_per_month, 1)
        , reviews_per_month = Substring(reviews_per_month, Charindex(',', reviews_per_month)+1, LEN(reviews_per_month)-Charindex(',', reviews_per_month))
 WHERE  calculated_host_listings_count IN ('t', 'f')
 
-
-SELECT*
-FROM   PortfolioProject.dbo.Listings
